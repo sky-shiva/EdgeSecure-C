@@ -1,0 +1,15 @@
+# EdgeSecure — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Audio capture
+pyaudio==0.2.14
+
+# Transcription — int8 quantized Whisper (CTranslate2 backend)
+faster-whisper==1.0.3
+
+# Local LLM inference — Phi-3 Mini via GGUF
+# For AMD NPU support, build with ROCm: CMAKE_ARGS="-DLLAMA_ROCM=on" pip install llama-cpp-python
+llama-cpp-python==0.2.77
+
+# Utilities
+numpy>=1.24.0
